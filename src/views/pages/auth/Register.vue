@@ -24,7 +24,7 @@ const register = async () => {
     }
 
     try {
-        const response = await axios.post(import.meta.env.VITE_ENDPOINT_REGISTER, {
+        const response = await axios.post(`http://45.115.225.112:7001/register`, {
             name: name.value,
             email: email.value,
             password: password.value,
